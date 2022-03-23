@@ -9,8 +9,8 @@ app.use(express.json());
 
 const logger = require('./middleware/logger.js');
 const validator = require('./middleware/validator.js');
-const handler404 = require('.error-handlers/404.js');
-const handler500 = require('.error-handlers/500.js');
+const handler404 = require('./error-handlers/404.js');
+const handler500 = require('./error-handlers/500.js');
 
 app.use(express.json());
 app.use(logger);
