@@ -10,11 +10,16 @@
 
 #### Links:
 [Heroku](https://mc-express-server.herokuapp.com/)
+
 [repo](https://github.com/MichaelCampbell-on3001/basic-express-server)
 
 #### Pull Request
+[syntax error fixed](https://github.com/MichaelCampbell-on3001/basic-express-server/pull/4)
+
 [DEV](https://github.com/MichaelCampbell-on3001/basic-express-server/pull/1)
+
 [also dev](https://github.com/MichaelCampbell-on3001/basic-express-server/pull/2)
+
 [syntax error fixed](https://github.com/MichaelCampbell-on3001/basic-express-server/pull/4)
 
 ### Setup
