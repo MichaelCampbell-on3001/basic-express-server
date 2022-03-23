@@ -9,15 +9,17 @@ app.use(express.json());
 
 const logger = require('./middleware/logger.js');
 const validator = require('./middleware/validator.js');
-// const handler404 = require('.error-handlers/404.js');
-// const handler500 = reqire('.error-handlers/500.js');
+const handler404 = require('.error-handlers/404.js');
+const handler500 = require('.error-handlers/500.js');
 
 app.use(express.json());
 app.use(logger);
 
 app.get('/person', validator);
 
-app.use('*');
+app.use('*', handler404);
+
+app.use(handler500);
 
 // app.get("/", (req, res, next) => )
 

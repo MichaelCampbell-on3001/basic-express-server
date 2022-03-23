@@ -1,13 +1,13 @@
 'use strict';
 
-function throw500Error (req, res, next) {
+function throw500Error (req, res, next, err) {
   
-  let error={
+  let errorObject={
     status:500,
-    message:'server error!',
+    message:err,
    
   };
-  res.status(404).send(error);
+  res.status(404).send(errorObject);
 }
 
 module.exports = throw500Error;
