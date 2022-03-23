@@ -21,7 +21,9 @@ app.use('*', handler404);
 
 app.use(handler500);
 
-// app.get("/", (req, res, next) => )
+app.get('/', (req, res, next) => {
+  res.send('Welcome to the home route!');
+});
 
 module.exports = {
   app,
